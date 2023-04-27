@@ -1,0 +1,32 @@
+$white: #fff;
+$black: #1a1a1b;
+
+$grey: #636363;
+$veryLightGray: #f4f4f4;
+$lightGray: #8d8d8d;
+$darkGray: #303134;
+
+$yellow: #fed701;
+$blue: #4854fa;
+$darkblue: #006cd1;
+
+
+// gradient
+
+$lightBlue: #08aeea;
+$lightGreen: #2af598;
+
+
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
