@@ -1,0 +1,53 @@
+.header{
+    height: 10rem;
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 6rem;
+    
+    &__logo{
+        font-family: 'Smooch', cursive;
+        font-size: 4rem;
+        background: -webkit-linear-gradient($lightBlue, $lightGreen);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: default;
+    }
+
+    &__nav{
+
+        flex: 1;
+
+        &-list{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 3rem;
+
+            &-item{
+                list-style-type: none;
+                font-size: 1.6rem;
+                font-weight: 600;
+
+                &-link{
+                    text-decoration: none;
+                }
+
+                &-link:link, &-link:visited{
+                    color: $lightGray;
+
+                }
+                &-link:hover, &-link:active{
+                    color: $lightGray;
+                    background: -webkit-linear-gradient($lightBlue, $lightGreen);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                } 
+            
+            }
+
+        }
+    }
+}

@@ -1,32 +1,21 @@
-$white: #fff;
-$black: #1a1a1b;
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
 
-$grey: #636363;
-$veryLightGray: #f4f4f4;
-$lightGray: #8d8d8d;
-$darkGray: #303134;
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-$yellow: #fed701;
-$blue: #4854fa;
-$darkblue: #006cd1;
+// @import "components/"
 
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
 
-// gradient
-
-$lightBlue: #08aeea;
-$lightGreen: #2af598;
-
-
+@import "pages/home";
 
 
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-html{
-    font-size: 62.5%;
-}
 
 
