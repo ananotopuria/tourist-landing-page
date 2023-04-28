@@ -1,5 +1,5 @@
 .header{
-    height: 10rem;
+    height: 8rem;
     background-color: $white;
     display: flex;
     flex-direction: row;
@@ -10,6 +10,7 @@
         font-family: 'Smooch', cursive;
         font-size: 4rem;
         background: -webkit-linear-gradient($lightBlue, $lightGreen);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         cursor: default;
@@ -42,6 +43,7 @@
                 &-link:hover, &-link:active{
                     color: $lightGray;
                     background: -webkit-linear-gradient($lightBlue, $lightGreen);
+                    background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 } 

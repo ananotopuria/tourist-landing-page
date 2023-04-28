@@ -1,0 +1,19 @@
+// Slider buttons
+
+.hero__slider--btns{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10rem;
+    top: 20vw;
+
+    &-btn{
+        font-size: 2rem;
+        color: $darkGray;
+        border: none;
+        padding: 1rem;
+    }
+}

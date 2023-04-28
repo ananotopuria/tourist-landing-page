@@ -8,18 +8,15 @@ body {
 
 }
 
-// .heading-primary {
-//     color: $lightGray;
-//     text-transform: uppercase;
-//     backface-visibility: hidden;
-//     margin-bottom: 6rem;
-//     font-weight: 400;
-//     letter-spacing: 3.5rem;
-//     &--main{
+.slide-title {
+    font-family: 'Smooch', cursive;
+        font-size: 10rem;
+        color: $white;
+}
+.slide-txt{
+    font-size: 1.8rem;
+        color: $white;
+        font-weight: 600;
+        text-transform: uppercase;
 
-//     }
-//     &--sub{
-
-//     }
-
-// }
+}
