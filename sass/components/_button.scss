@@ -17,3 +17,40 @@
         padding: 1rem;
     }
 }
+
+.modal__btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10rem;
+    border-radius: 50%;
+    color: $white;
+    padding: 3rem;
+    &-btn{
+        display: inline-block;
+        text-decoration: none;
+        padding: 1rem 2.5rem;
+        color: $white;
+        font-size: 1.6rem;
+        cursor: pointer;
+        font-weight: 700;
+    }
+    &-1{
+        background-color: rgba($yellow, 0.5);
+        padding: 1.2rem, 2rem;
+        &:hover{
+            // box-shadow: inset 0 0 08px $yellow;
+            background-color: rgba($lightGreen, 0.5);
+        }
+    }
+    &-2{
+        background-color: transparent;
+    }
+}
+
+.btn--outline{
+    border: 2px solid $white;
+    &:hover{
+        box-shadow: inset 0 0 08px $yellow;
+    }
+}

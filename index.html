@@ -7,8 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Smooch&display=swap" rel="stylesheet">
+<script type="module" src="js/modalWindow.js"></script>
 <script type="module" src="js/card.js"></script>
 <script type="module" src="js/slider.js"></script>
+
 <script type="module" defer src="js/index.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
@@ -50,6 +52,16 @@
             </div>
         </section>
         <section class="section services grid grid-2--cols-12">
+            <div class="modal hidden">
+                <button class="close-modal">&times;</button>
+                <p class="slide-txt">travel with us</p>
+                <h2 class="slide-title">Discover Your Adventure</h2>
+                <div class="modal__btns">
+                    <a class="modal__btns-btn modal__btns-1" href="#">Discover</a>
+                    <a class="modal__btns-btn btn--outline modal__btns-2" href="#">Know More</a>
+                </div>      
+            </div>
+            <div class="overlayy hidden"></div>
             <div class="section__title">
                 <p class="section__title--upper">discover</p>
                 <h2 class="section__title--sub">Our Hot Services</h2>

@@ -7,7 +7,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -24,6 +25,12 @@ body {
   color: #fff;
   font-weight: 600;
   text-transform: uppercase; }
+
+.hidden {
+  display: none; }
+
+.position {
+  position: relative; }
 
 .hero {
   width: 100vw;
@@ -79,6 +86,35 @@ body {
     color: #303134;
     border: none;
     padding: 1rem; }
+
+.modal__btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10rem;
+  border-radius: 50%;
+  color: #fff;
+  padding: 3rem; }
+  .modal__btns-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: 700; }
+  .modal__btns-1 {
+    background-color: rgba(254, 215, 1, 0.5);
+    padding: 1.2rem, 2rem; }
+    .modal__btns-1:hover {
+      background-color: rgba(42, 245, 152, 0.5); }
+  .modal__btns-2 {
+    background-color: transparent; }
+
+.btn--outline {
+  border: 2px solid #fff; }
+  .btn--outline:hover {
+    box-shadow: inset 0 0 8px #fed701; }
 
 .grid {
   display: grid; }
@@ -139,6 +175,34 @@ body {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
 
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-image: linear-gradient(to bottom, rgba(42, 245, 152, 0.6) 0, rgba(8, 174, 234, 0.6) 50%), url(../img/vidar-nordli-mathisen-AvnXCFX25GA-unsplash-scaled.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 6rem;
+  border-radius: 5px;
+  z-index: 10; }
+
+.close-modal {
+  position: absolute;
+  right: 10rem;
+  padding: 1rem 1.5rem; }
+
+.overlayy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  z-index: 5; }
+
 .section {
   margin-top: 5rem; }
   .section__txt {
@@ -170,6 +234,7 @@ body {
       background-image: url("img/zigzag.png"); }
 
 .services {
+  position: relative;
   padding-top: 7rem;
   margin: 0 auto;
   width: 130rem;
