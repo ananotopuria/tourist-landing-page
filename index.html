@@ -7,8 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Smooch&display=swap" rel="stylesheet">
+<script type="module" src="js/card.js"></script>
+<script type="module" src="js/slider.js"></script>
+<script type="module" defer src="js/index.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/index.js"></script>
     <title>TOURISM</title>
 </head>
 <body>
@@ -25,7 +28,7 @@
         </nav>
     </header>
     <main>
-        <section class="section hero">
+        <section class="hero">
             <div class="hero__slider">
                 <div class="hero__slider--slide slide--1">
                     <p class="slide--1-price"><strong>From $199/Person</strong></p>
@@ -46,11 +49,14 @@
                 </div>
             </div>
         </section>
-        <section class="section services">
-            <div class="services__descriptio">
-                <div class="title"></div>
+        <section class="section services grid grid-2--cols-12">
+            <div class="section__title">
+                <p class="section__title--upper">discover</p>
+                <h2 class="section__title--sub">Our Hot Services</h2>
+                <img src="img/zigzag.png" alt="line icon" class="section__title--icon">
+                <p class="section__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, perferendis dolore. Nulla, quo quis eos repudiandae corporis molestiae dolores natus quia quidem magnam quaerat omnis neque, placeat nihil autem fugiat.</p>
             </div>
-            <div class="services__card"></div>
+            <div id="card-container" class="services__cards grid grid--3-cols"></div>
         </section>
         <section class="section tour">
             <div class="title"></div>
@@ -60,6 +66,10 @@
         <section class="section testimonials"></section>
         <section class="section destination"></section>
     </main>
-    <footer></footer>
+
+    <footer>
+
+    </footer>
+
 </body>
 </html>
