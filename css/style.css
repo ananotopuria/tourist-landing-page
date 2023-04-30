@@ -26,11 +26,30 @@ body {
   font-weight: 600;
   text-transform: uppercase; }
 
+.tour__title {
+  position: absolute;
+  display: flex;
+  flex-direction: center;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 10; }
+
 .hidden {
   display: none; }
 
 .position {
   position: relative; }
+
+.overlayy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  z-index: 5; }
 
 .hero {
   width: 100vw;
@@ -194,14 +213,19 @@ body {
   right: 10rem;
   padding: 1rem 1.5rem; }
 
-.overlayy {
+.bg-video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
-  backdrop-filter: blur(3px);
-  z-index: 5; }
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0.10; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .section {
   margin-top: 5rem; }
@@ -227,6 +251,7 @@ body {
       content: "Discover"; }
     .section__title .section__title--sub {
       display: inline-block;
+      font-size: 2.5rem;
       content: "Our Hot Services"; }
     .section__title .section__title--icon {
       width: 5rem;
@@ -260,3 +285,12 @@ body {
     .services__card:last-child > img {
       height: 19rem;
       object-fit: cover; }
+
+.tour {
+  position: relative; }
+  .tour__video {
+    position: absolute;
+    bottom: 0;
+    left: 40rem;
+    box-shadow: 1rem 1.5rem 1rem rgba(26, 26, 27, 0.5);
+    z-index: 10; }

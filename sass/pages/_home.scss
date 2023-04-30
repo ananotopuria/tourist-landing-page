@@ -52,3 +52,15 @@
     }
 }
 
+// Tour 
+
+.tour{
+    position: relative;
+    &__video{
+        position: absolute;
+        bottom: 0;
+        left: 40rem;
+        box-shadow: 1rem 1.5rem 1rem rgba($black, .5);
+        z-index: 10;
+    }
+}
