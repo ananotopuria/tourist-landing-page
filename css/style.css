@@ -8,7 +8,7 @@ html {
 
 body {
   box-sizing: border-box;
-  position: relative; }
+  overflow-x: hidden; }
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -229,34 +229,23 @@ body {
 
 .section {
   margin-top: 5rem; }
-  .section__txt {
-    font-size: 1.6rem;
-    color: #8d8d8d; }
 
 .section__title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  .section__title .section__title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .section__title .section__title--upper {
-      text-transform: uppercase;
-      font-size: 1.6rem;
-      color: #8d8d8d;
-      display: inline-block;
-      content: "Discover"; }
-    .section__title .section__title--sub {
-      display: inline-block;
-      font-size: 2.5rem;
-      content: "Our Hot Services"; }
-    .section__title .section__title--icon {
-      width: 5rem;
-      display: inline-block;
-      background-image: url("img/zigzag.png"); }
+  .section__title--upper {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: #8d8d8d;
+    display: inline-block; }
+  .section__title--sub {
+    display: inline-block;
+    font-size: 2.5rem; }
+  .section__title--icon {
+    width: 5rem;
+    display: inline-block; }
 
 .services {
   position: relative;
@@ -294,3 +283,34 @@ body {
     left: 40rem;
     box-shadow: 1rem 1.5rem 1rem rgba(26, 26, 27, 0.5);
     z-index: 10; }
+
+.incrementing {
+  padding-top: 10rem;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .incrementing__counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .incrementing__counter-icon {
+      font-size: 64px;
+      color: #fed701;
+      background: linear-gradient(#2af598, #08aeea);
+      height: 4.2rem;
+      width: 4.2rem;
+      color: rgba(255, 255, 255, 0.9);
+      padding: 1.6rem;
+      border-radius: 50%;
+      margin-bottom: 3.2rem; }
+      .incrementing__counter-icon:hover {
+        color: #fed701; }
+    .incrementing__counter-number {
+      font-size: 5rem; }
+    .incrementing__counter-title {
+      font-size: 1.5rem;
+      text-transform: uppercase; }

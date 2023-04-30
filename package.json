@@ -9,7 +9,8 @@
   "author": "Anano",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "sass-graph": "^4.0.1"
   },
   "dependencies": {
     "live-server": "^1.1.0"

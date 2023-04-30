@@ -1,10 +1,6 @@
 
 .section{
     margin-top: 5rem;
-    &__txt{
-        font-size: 1.6rem;
-        color: $lightGray;
-    }
 }
 // Services
 
@@ -13,7 +9,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @include section-title('Discover', 'Our Hot Services');
+    
+    &--upper {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        color: $lightGray;
+        display: inline-block;
+
+    }   
+    &--sub {
+        display: inline-block;
+        font-size: 2.5rem;
+
+    }
+    &--icon {
+        width: 5rem;
+    display: inline-block;
+    }
 }
 
 .services{
