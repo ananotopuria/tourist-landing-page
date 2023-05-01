@@ -76,3 +76,67 @@
         z-index: 10;
     }
 }
+
+.discount{
+    width: 100vw;
+    height: 40rem;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba($lightGreen, 0.6) 0,
+        rgba($lightBlue, 0.6) 50%), 
+        url(/img/pexels-nataliya-vaitkevich-4944685.jpg);
+        background-size: cover;
+        background-position: 10% 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    &__title{
+        font-size: 3.4rem;
+    }
+    &__txt{
+        font-size: 2rem;
+    }
+    &__form{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 5rem;
+        
+        &--input-field > input {
+            border: 1px solid $white;
+            background-color: transparent;
+            border-radius: 30px;
+            color: $white;
+            width: 40rem;
+            padding: 1.5rem 3rem;
+        }
+        &--input-field input::placeholder{
+            color: $white;
+        }
+    }
+}
+
+// validation
+
+.discount__form--input-field {
+    position: relative;
+  }
+  
+  .input-field.invalid {
+    border: 2px solid $yellow;
+    background-color: transparent;
+  }
+  
+  #error-message {
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    background-color: transparent;
+  }
+  
+  .input-field.invalid + .error-message {
+    display: block;
+  }
+

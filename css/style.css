@@ -153,6 +153,15 @@ body {
   font-weight: 700;
   margin-top: 8rem; }
 
+.form__btn {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #08aeea;
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 1.5rem 3rem; }
+
 .grid {
   display: grid; }
 
@@ -301,6 +310,52 @@ body {
     left: 40rem;
     box-shadow: 1rem 1.5rem 1rem rgba(26, 26, 27, 0.5);
     z-index: 10; }
+
+.discount {
+  width: 100vw;
+  height: 40rem;
+  background-image: linear-gradient(to bottom, rgba(42, 245, 152, 0.6) 0, rgba(8, 174, 234, 0.6) 50%), url(/img/pexels-nataliya-vaitkevich-4944685.jpg);
+  background-size: cover;
+  background-position: 10% 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; }
+  .discount__title {
+    font-size: 3.4rem; }
+  .discount__txt {
+    font-size: 2rem; }
+  .discount__form {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 5rem; }
+    .discount__form--input-field > input {
+      border: 1px solid #fff;
+      background-color: transparent;
+      border-radius: 30px;
+      color: #fff;
+      width: 40rem;
+      padding: 1.5rem 3rem; }
+    .discount__form--input-field input::placeholder {
+      color: #fff; }
+
+.discount__form--input-field {
+  position: relative; }
+
+.input-field.invalid {
+  border: 2px solid #fed701;
+  background-color: transparent; }
+
+#error-message {
+  position: absolute;
+  top: 6rem;
+  left: 2rem;
+  background-color: transparent; }
+
+.input-field.invalid + .error-message {
+  display: block; }
 
 .incrementing {
   padding-top: 10rem;
