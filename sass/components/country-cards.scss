@@ -1,0 +1,59 @@
+.countries{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    overflow: hidden;
+}
+.country{
+    width: 30rem;
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    align-items: end;
+    justify-items: center;
+    &__details{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        color: $white;
+        font-size: 2.6rem;
+        font-weight: 600;
+    }
+    &__price{
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    &__icon{
+        display: inline-block;
+        color: $white;
+        background-image: linear-gradient(to right, $lightBlue, $lightGreen);
+        border-radius: 50%;
+        font-size: 2rem;
+        padding: 2rem;
+        &:hover{
+            box-shadow: inset 0 0 08px $yellow;
+            
+        }
+    }
+}
+
+.thailand {
+    @include location-background("/img/alex-block-429051-unsplash.webp");
+  }
+  
+.italy{
+    @include location-background("/img/yeo-khee-618704-unsplash1-1024x576.jpg");
+  }
+  
+.indonesia{
+    @include location-background("/img/tom-vining-668021-unsplash.jpg");
+  }
+  
+.singapore{
+    @include location-background("/img/singapore-city_2x3.avif");
+  }

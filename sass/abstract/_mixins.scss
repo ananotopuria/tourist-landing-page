@@ -1,1 +1,10 @@
-
+@mixin location-background($url) {
+    background-image: url($url);
+    filter: brightness(80%);
+    transition: all 0.4s;
+  
+    &:hover {
+      filter: brightness(100%);
+      transform: scale(1.1);
+    }
+  }

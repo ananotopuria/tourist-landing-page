@@ -541,3 +541,72 @@ body {
     .card__price-box-days:hover {
       color: rgba(254, 215, 1, 0.9);
       cursor: default; }
+
+.countries {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  overflow: hidden; }
+
+.country {
+  width: 30rem;
+  height: 40rem;
+  background-size: cover;
+  background-position: center;
+  align-items: end;
+  justify-items: center; }
+  .country__details {
+    display: flex;
+    flex-direction: column; }
+  .country__title {
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 600; }
+  .country__price {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600; }
+  .country__icon {
+    display: inline-block;
+    color: #fff;
+    background-image: linear-gradient(to right, #08aeea, #2af598);
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 2rem; }
+    .country__icon:hover {
+      box-shadow: inset 0 0 8px #fed701; }
+
+.thailand {
+  background-image: url("/img/alex-block-429051-unsplash.webp");
+  filter: brightness(80%);
+  transition: all 0.4s; }
+  .thailand:hover {
+    filter: brightness(100%);
+    transform: scale(1.1); }
+
+.italy {
+  background-image: url("/img/yeo-khee-618704-unsplash1-1024x576.jpg");
+  filter: brightness(80%);
+  transition: all 0.4s; }
+  .italy:hover {
+    filter: brightness(100%);
+    transform: scale(1.1); }
+
+.indonesia {
+  background-image: url("/img/tom-vining-668021-unsplash.jpg");
+  filter: brightness(80%);
+  transition: all 0.4s; }
+  .indonesia:hover {
+    filter: brightness(100%);
+    transform: scale(1.1); }
+
+.singapore {
+  background-image: url("/img/singapore-city_2x3.avif");
+  filter: brightness(80%);
+  transition: all 0.4s; }
+  .singapore:hover {
+    filter: brightness(100%);
+    transform: scale(1.1); }
