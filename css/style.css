@@ -150,7 +150,7 @@ body {
   color: #fff;
   font-size: 1.6rem;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 8rem; }
 
 .form__btn {
@@ -406,6 +406,35 @@ body {
         width: 100%; }
       .testimonials__container-testimonial-icon {
         margin-top: 2rem; }
+
+.book {
+  background-image: linear-gradient(rgba(42, 245, 152, 0.1) 0, rgba(8, 174, 234, 0.1) 50%), url(/img/redd-f-i-guyVERAnY-unsplash.jpg);
+  height: 50rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
+  .book__title {
+    font-size: 5rem;
+    color: #fff; }
+  .book__btn {
+    display: inline-block;
+    margin: 4rem 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: linear-gradient(#08aeea, #2af598);
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #2af598;
+    background-image: linear-gradient(to right, #08aeea, #2af598); }
+    .book__btn:hover {
+      box-shadow: inset 0 0 8px #fed701; }
 
 .incrementing {
   padding-top: 10rem;

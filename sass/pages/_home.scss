@@ -205,3 +205,42 @@
         }
     }
 }
+
+//book 
+
+.book{
+    background-image: linear-gradient( 
+        rgba($lightGreen, 0.1) 0,
+        rgba($lightBlue, 0.1) 50%), 
+        url(/img/redd-f-i-guyVERAnY-unsplash.jpg);
+    height: 50rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__title{
+        font-size: 5rem;
+        color: $white;
+    }
+    &__btn{
+        display: inline-block;
+        margin: 4rem 0;
+        font-size: 1.6rem;
+        font-weight: 600;
+        background-color: linear-gradient($lightBlue, $lightGreen);
+        color: $white;
+        text-decoration: none;
+        padding: 1rem 2.5rem;
+        color: $white;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: $lightGreen;
+        background-image: linear-gradient(to right, $lightBlue, $lightGreen);
+        &:hover{
+            box-shadow: inset 0 0 08px $yellow;
+        }
+    }
+}
