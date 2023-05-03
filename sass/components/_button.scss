@@ -76,3 +76,15 @@
     border-radius: 30px;
     padding: 1.5rem 3rem;
 }
+
+.footer__form--btn{
+    background: linear-gradient($lightBlue, $lightGreen);
+    border: none;
+    color: $white;
+    position: absolute; 
+    top: 0;
+    right: 20%;  
+    height: 30%; 
+    padding: 0 1rem;
+    
+}
