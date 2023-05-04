@@ -5,6 +5,7 @@
   
     &:hover {
       filter: brightness(100%);
+      transform-origin: bottom center;
       transform: scale(1.1);
     }
   }

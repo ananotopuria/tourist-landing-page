@@ -1,3 +1,7 @@
+.footer__container{
+    display: flex;
+    flex-direction: column;
+}
 .footer{
     background-color: $darkGray;
     padding: 10rem 0;
@@ -7,7 +11,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 5rem;
         &--list{
             width: 20%;
             &s{
@@ -40,41 +45,47 @@
     font-weight: 600;
     cursor: default;
 }
-
 .footer__form{
     display: flex;
     flex-direction: row;
-    margin-top: 5rem;
+    justify-content: center;
+    align-items: flex-start;
     position: relative;
-
     &--input-field > input {
-        border: 1px solid $white;
-        background-color: transparent;
+        border: none;
+        outline: none;
+        background-color: $white;
         color: $white;
-        width: 28rem;
+        width: 70%;
+        height: 5rem;
         padding: 1.5rem 3rem;
+        margin-top: 2rem;
         &--input-field input::placeholder{
             color: $white;
         }
     }
 }
-
-.form--input-field {
-    position: relative;
+  .footer__form--input-field label {
+    font-weight: 600;
+    font-size: 1.6rem;
   }
-  
   .input-field.invalid {
     border: 2px solid $yellow;
     background-color: transparent;
   }
-  
-  #error-message {
+  #footer-error-message {
     position: absolute;
-    top: 6rem;
-    left: 2rem;
+    top: 10rem;
+    left: 0;
     background-color: transparent;
   }
-  
-  .input-field.invalid + .error-message {
+  .input-field.invalid + .footer-error-message {
     display: block;
+  }
+  .copyright {
+    color: $white;
+    background-color: $darkGray;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
   }

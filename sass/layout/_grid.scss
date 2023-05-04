@@ -8,6 +8,9 @@
 .grid-2--cols-31{
   grid-template-columns: 3fr 1fr;
 }
+.grid-2--cols-32{
+  grid-template-columns: 3fr 2fr;
+}
 
 .grid--2-cols {
     grid-template-columns: repeat(2, 1fr);

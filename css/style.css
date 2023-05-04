@@ -58,6 +58,10 @@ body {
   backdrop-filter: blur(3px);
   z-index: 5; }
 
+.line {
+  border: 0.5px solid #fff;
+  width: 100%; }
+
 .hero {
   width: 100vw;
   height: 100vh; }
@@ -166,11 +170,14 @@ body {
   background: linear-gradient(#08aeea, #2af598);
   border: none;
   color: #fff;
-  position: absolute;
-  top: 0;
-  right: 20%;
-  height: 30%;
-  padding: 0 1rem; }
+  height: 5rem;
+  margin-top: 2rem;
+  width: 15%;
+  position: absolute; }
+
+.footer__container {
+  display: flex;
+  flex-direction: column; }
 
 .footer {
   background-color: #303134;
@@ -181,7 +188,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: center;
+    gap: 5rem; }
     .footer__lists--list {
       width: 20%; }
       .footer__lists--lists {
@@ -209,32 +217,44 @@ body {
 .footer__form {
   display: flex;
   flex-direction: row;
-  margin-top: 5rem;
+  justify-content: center;
+  align-items: flex-start;
   position: relative; }
   .footer__form--input-field > input {
-    border: 1px solid #fff;
-    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color: #fff;
     color: #fff;
-    width: 28rem;
-    padding: 1.5rem 3rem; }
+    width: 70%;
+    height: 5rem;
+    padding: 1.5rem 3rem;
+    margin-top: 2rem; }
     .footer__form--input-field > input--input-field input::placeholder {
       color: #fff; }
 
-.form--input-field {
-  position: relative; }
+.footer__form--input-field label {
+  font-weight: 600;
+  font-size: 1.6rem; }
 
 .input-field.invalid {
   border: 2px solid #fed701;
   background-color: transparent; }
 
-#error-message {
+#footer-error-message {
   position: absolute;
-  top: 6rem;
-  left: 2rem;
+  top: 10rem;
+  left: 0;
   background-color: transparent; }
 
-.input-field.invalid + .error-message {
+.input-field.invalid + .footer-error-message {
   display: block; }
+
+.copyright {
+  color: #fff;
+  background-color: #303134;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem; }
 
 .grid {
   display: grid; }
@@ -244,6 +264,9 @@ body {
 
 .grid-2--cols-31 {
   grid-template-columns: 3fr 1fr; }
+
+.grid-2--cols-32 {
+  grid-template-columns: 3fr 2fr; }
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr); }
@@ -666,6 +689,7 @@ iframe {
   transition: all 0.4s; }
   .thailand:hover {
     filter: brightness(100%);
+    transform-origin: bottom center;
     transform: scale(1.1); }
 
 .italy {
@@ -674,6 +698,7 @@ iframe {
   transition: all 0.4s; }
   .italy:hover {
     filter: brightness(100%);
+    transform-origin: bottom center;
     transform: scale(1.1); }
 
 .indonesia {
@@ -682,6 +707,7 @@ iframe {
   transition: all 0.4s; }
   .indonesia:hover {
     filter: brightness(100%);
+    transform-origin: bottom center;
     transform: scale(1.1); }
 
 .singapore {
@@ -690,4 +716,5 @@ iframe {
   transition: all 0.4s; }
   .singapore:hover {
     filter: brightness(100%);
+    transform-origin: bottom center;
     transform: scale(1.1); }

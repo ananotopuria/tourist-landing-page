@@ -252,7 +252,8 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6436560.2928328235!2d19.03735817031076!3d38.027236521009044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b4ac711716c63%3A0x363a1775dc9a2d1d!2sGreece!5e0!3m2!1sen!2sge!4v1683044084629!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
-    <footer class="footer grid grid-2--cols-31">
+    <footer class="footer__container">
+        <div class="footer grid grid-2--cols-31">
         <div class="footer__lists">
             <div class="footer__lists--list">
                     <ul class="footer__lists--lists">
@@ -284,20 +285,22 @@
         </div>
         <form class="footer__form">
             <div class="footer__form--input-field">
-            <label for="email"></label>
-            <input
-              id="email"
-              class="input-field"
-              name="email"
-              type="email"
-              placeholder="Enter your email"
-            />
-            <span id="error-message"></span>
+                <label for="email">Subscribe to our newsletter</label>
+                <input
+                id="footer-email"
+                class="input-field"
+                name="email"
+                type="email"
+                placeholder="Your email"
+                />
+                <button class="footer__form--btn">GO!</button>
             </div>
-            <button class="footer__form--btn">GO!</button>
+            <span id="footer-error-message" class="error-message"></span>
         </form>
+    </div>
+    <div class="line"></div>
+    <p class="copyright">tourism&#169;All Rights Reserved</p>
     </footer>
-
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
