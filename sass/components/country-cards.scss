@@ -6,6 +6,14 @@
     justify-content: center;
     margin-top: 3rem;
     overflow: hidden;
+    @include respond(tab-port){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 0;
+        row-gap: 0;
+    }
 }
 .country{
     width: 30rem;
@@ -14,6 +22,15 @@
     background-position: center;
     align-items: end;
     justify-items: center;
+    @include respond(tab-land-1324){
+        width: 25rem;
+        height: 35rem;
+    }
+    @include respond(tab-port){
+        width: 40rem;
+        height: 40rem;
+        
+    }
     &__details{
         display: flex;
         flex-direction: column;

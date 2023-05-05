@@ -1,6 +1,9 @@
 
 .section{
     margin-top: 5rem;
+    @include respond(tab-land-1324){
+        margin-top: 2rem;
+    }
 }
 // Services
 
@@ -35,10 +38,22 @@
     width: 130rem;
     align-items: start;
     column-gap: 1rem;
+    @include respond(tab-land-1324){
+        width: 120rem
+    }
+    @include respond(tab-port-1090){
+        width: 100rem;
+    }
+    
+    
     &__cards{
         align-items: center;
         justify-items: center;
         row-gap: 2rem;
+        @include respond(tab-port){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
     &__card{
         margin: 0 auto;
@@ -74,6 +89,18 @@
         left: 40rem;
         box-shadow: 1rem 1.5rem 1rem rgba($black, .5);
         z-index: 10;
+        @include respond(tab-land-1324){
+            width: 60rem;
+            bottom: 4rem;
+        }
+        @include respond(tab-port-1090){
+            left: 30rem;
+        }
+        @include respond(tab-port){
+            bottom: 0;
+            width: 40rem;
+            height: 20rem;
+        }
     }
 }
 
@@ -163,7 +190,10 @@
         display: flex;
         flex-direction: row;
         gap: 4rem;
-
+        @include respond(tab-land-1324){
+            gap: 2rem;
+            padding-top: 3rem;
+        }
         &-testimonial{
             background-color: rgba($grey, .2);
             font-size: 1.5rem;
@@ -248,4 +278,7 @@
 iframe{
     margin-top: 6rem;
     width: 100%;
+    @include respond(tab-port-1090){
+        margin-top: 10rem;
+    }
 }

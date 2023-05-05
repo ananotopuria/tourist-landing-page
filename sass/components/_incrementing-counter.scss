@@ -7,6 +7,9 @@
     justify-content: space-around;
     align-items: center;
     padding-bottom: 6rem;
+    @include respond(tab-land-1324){
+        padding-bottom: 2rem;
+    }
     &__counter{
        display: flex;
        flex-direction: column;

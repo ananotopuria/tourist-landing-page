@@ -9,7 +9,9 @@
     width: 100%;
     padding: 0 10rem;
     top: 20vw;
-
+    @include respond(tab-land-1324){
+        top: 30vw;
+    }
     &-btn{
         font-size: 2rem;
         color: $darkGray;
@@ -26,6 +28,13 @@
     border-radius: 50%;
     color: $white;
     padding: 3rem;
+    @include respond(tab-land-1324){
+        display: inline-block;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     &-btn{
         display: inline-block;
         text-decoration: none;
