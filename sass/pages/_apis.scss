@@ -1,0 +1,68 @@
+.country-api{
+    background-image: radial-gradient($lightGreen, $lightBlue);  
+}
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+} 
+.countries {
+    margin-top: 2rem;
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 1s;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    justify-content: center;
+    row-gap: 2rem;
+    @include respond(tab-land-1324){
+        grid-template-columns: 1fr 1fr 1fr; 
+
+    }
+    @include respond(tab-port){
+        grid-template-columns: 1fr 1fr; 
+
+    }
+    @include respond(phone){
+        grid-template-columns: 1fr; 
+
+    }
+  }
+  .country {
+    background-color: #fff;
+    box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+    font-size: 1.8rem;
+    width: 30rem;
+    border-radius: 0.7rem;
+    margin: 0 3rem;
+    &__img {
+        width: 30rem;
+        height: 17rem;
+        object-fit: cover;
+        background-color: #eee;
+        border-top-left-radius: 0.7rem;
+        border-top-right-radius: 0.7rem; 
+    }
+    &__data {
+        padding: 2.5rem 3.75rem 3rem 3.75rem; 
+    }
+    &__name {
+        font-size: 2.7rem;
+        margin-bottom: 0.7rem; 
+    }
+    &__region {
+        font-size: 1.4rem;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+        color: #888; 
+    }
+    &__row:not(:last-child) {
+      margin-bottom: 1rem; 
+    }
+    &__row span {
+      display: inline-block;
+      margin-right: 2rem;
+      font-size: 2.4rem; 
+    }
+}
