@@ -44,8 +44,12 @@
     @include respond(tab-port-1090){
         width: 100rem;
     }
-    
-    
+    @include respond(phone-l){
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 60rem;
+        row-gap: 2rem;
+    }  
     &__cards{
         align-items: center;
         justify-items: center;
@@ -194,6 +198,10 @@
             gap: 2rem;
             padding-top: 3rem;
         }
+        @include respond(phone-l){
+            display: grid;
+
+        }
         &-testimonial{
             background-color: rgba($grey, .2);
             font-size: 1.5rem;
@@ -206,7 +214,10 @@
             gap: 2rem;
             justify-content: center;
             align-items: center;
-
+            @include respond(phone-l){
+                width: 80%;
+                align-self: center;
+           }
             &:hover{
                 transform: translateY(-1.5rem) scale(1.03);
             }
@@ -216,6 +227,10 @@
                border-radius: 50%;
                display: inline-block;
                object-fit: cover;
+               @include respond(phone-l){
+                    border-radius: 0;
+                    width: 40%;
+               }
                &:hover{
                 border: 2px solid $yellow;
 

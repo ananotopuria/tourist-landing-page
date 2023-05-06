@@ -10,6 +10,12 @@
     @include respond(tab-land-1324){
         padding-bottom: 2rem;
     }
+    @include respond(phone-l){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 60rem;
+        row-gap: 2rem;
+    } 
     &__counter{
        display: flex;
        flex-direction: column;

@@ -5,12 +5,24 @@
         justify-content: space-around;
         align-items: center;
         padding: 8rem;
+        @include respond(phone-l){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 2rem;
+
+         } 
         &--card{
             perspective: 150rem;
             -moz-perspective: 150rem;
             position: relative;
             height: 50rem;
             width: 30rem;
+            @include respond(phone-l){ 
+                align-self: center; 
+             } 
             &-side{
                 height: 50rem;
                 color: #fff;

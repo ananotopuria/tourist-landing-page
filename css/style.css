@@ -134,6 +134,14 @@ body {
   @media (max-width: 82.75em) {
     .hero__slider--btns {
       top: 30vw; } }
+  @media (max-width: 48em) {
+    .hero__slider--btns {
+      top: 70vw; } }
+  @media (max-width: 37.5em) {
+    .hero__slider--btns {
+      top: 110vw;
+      justify-content: center;
+      gap: 2rem; } }
   .hero__slider--btns-btn {
     font-size: 2rem;
     color: #303134;
@@ -214,6 +222,12 @@ body {
   padding: 10rem 0;
   font-size: 1.4rem;
   color: #fff; }
+  @media (max-width: 37.5em) {
+    .footer {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 4rem;
+      padding-bottom: 0; } }
   .footer__lists {
     display: flex;
     flex-direction: row;
@@ -250,6 +264,9 @@ body {
   justify-content: center;
   align-items: flex-start;
   position: relative; }
+  @media (max-width: 37.5em) {
+    .footer__form {
+      grid-row: 2 / 3; } }
   .footer__form--input-field > input {
     border: none;
     outline: none;
@@ -350,6 +367,10 @@ body {
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
+
+@media (max-width: 48em) {
+  .header {
+    display: none; } }
 
 .navigation__checkbox {
   display: none; }
@@ -538,6 +559,12 @@ body {
   @media (max-width: 68.125em) {
     .services {
       width: 100rem; } }
+  @media (max-width: 48em) {
+    .services {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 60rem;
+      row-gap: 2rem; } }
   .services__cards {
     align-items: center;
     justify-items: center;
@@ -653,6 +680,9 @@ body {
       .testimonials__container {
         gap: 2rem;
         padding-top: 3rem; } }
+    @media (max-width: 48em) {
+      .testimonials__container {
+        display: grid; } }
     .testimonials__container-testimonial {
       background-color: rgba(99, 99, 99, 0.2);
       font-size: 1.5rem;
@@ -665,6 +695,10 @@ body {
       gap: 2rem;
       justify-content: center;
       align-items: center; }
+      @media (max-width: 48em) {
+        .testimonials__container-testimonial {
+          width: 80%;
+          align-self: center; } }
       .testimonials__container-testimonial:hover {
         transform: translateY(-1.5rem) scale(1.03); }
       .testimonials__container-testimonial-img {
@@ -673,6 +707,10 @@ body {
         border-radius: 50%;
         display: inline-block;
         object-fit: cover; }
+        @media (max-width: 48em) {
+          .testimonials__container-testimonial-img {
+            border-radius: 0;
+            width: 40%; } }
         .testimonials__container-testimonial-img:hover {
           border: 2px solid #fed701; }
       .testimonials__container-testimonial-author {
@@ -732,6 +770,12 @@ iframe {
   @media (max-width: 82.75em) {
     .incrementing {
       padding-bottom: 2rem; } }
+  @media (max-width: 48em) {
+    .incrementing {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 60rem;
+      row-gap: 2rem; } }
   .incrementing__counter {
     display: flex;
     flex-direction: column;
@@ -761,12 +805,23 @@ iframe {
   justify-content: space-around;
   align-items: center;
   padding: 8rem; }
+  @media (max-width: 48em) {
+    .package__cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 2rem; } }
   .package__cards--card {
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
     width: 30rem; }
+    @media (max-width: 48em) {
+      .package__cards--card {
+        align-self: center; } }
     .package__cards--card-side {
       height: 50rem;
       color: #fff;
@@ -845,6 +900,12 @@ iframe {
       justify-items: center;
       column-gap: 0;
       row-gap: 0; } }
+  @media (max-width: 48em) {
+    .countries {
+      grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 37.5em) {
+    .countries {
+      grid-template-columns: 1fr; } }
 
 .country {
   width: 30rem;
@@ -861,6 +922,14 @@ iframe {
     .country {
       width: 40rem;
       height: 40rem; } }
+  @media (max-width: 48em) {
+    .country {
+      width: 30;
+      height: 20rem; } }
+  @media (max-width: 48em) {
+    .country {
+      width: 30;
+      height: 20rem; } }
   .country__details {
     display: flex;
     flex-direction: column; }

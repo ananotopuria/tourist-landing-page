@@ -49,7 +49,14 @@
                 } 
             
             }
-
         }
     }
 }
+
+@media (max-width: 48em) {
+    .header {
+      display: none;
+    }
+  }
+
+

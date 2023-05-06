@@ -12,6 +12,15 @@
     @include respond(tab-land-1324){
         top: 30vw;
     }
+    @include respond(phone-l){
+        top: 70vw;
+    }
+    @include respond(phone){
+        top: 110vw;
+        justify-content: center;
+        gap: 2rem;
+
+    }
     &-btn{
         font-size: 2rem;
         color: $darkGray;

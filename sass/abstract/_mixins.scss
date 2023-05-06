@@ -38,25 +38,23 @@
     @media (max-width: 37.5em) { @content }; //600px
   }
   @if $breakpoint == phone-l {
-    @media (max-width: 48) { @content }; //768px
+    @media (max-width: 48em) { @content }; //768px
   }
   @if $breakpoint == tab-port {
     @media (max-width: 56.25em) { @content }; //900px
   }
   @if $breakpoint == tab-port-1090 {
     @media (max-width: 68.125em) { @content }; // 1090px;
-    }
+  }
   @if $breakpoint == tab-land {
     @media (max-width: 75em) { @content }; //1200px
   }
   @if $breakpoint == tab-land-1324 {
     @media (max-width: 82.75em) { @content }; // 1324px;
-    }
+  }
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5em) { @content }; //1800px
   }
 }
 
-// @include respond(big-desktop){
-//   font-size: 75%; //12px
-// }
+

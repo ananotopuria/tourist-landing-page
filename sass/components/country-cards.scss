@@ -14,6 +14,12 @@
         column-gap: 0;
         row-gap: 0;
     }
+    @include respond(phone-l){
+       grid-template-columns: 1fr 1fr;
+    } 
+    @include respond(phone){
+       grid-template-columns: 1fr;
+    } 
 }
 .country{
     width: 30rem;
@@ -28,9 +34,16 @@
     }
     @include respond(tab-port){
         width: 40rem;
-        height: 40rem;
-        
+        height: 40rem; 
     }
+    @include respond(phone-l){
+        width: 30;
+        height: 20rem;
+     } 
+    @include respond(phone-l){
+        width: 30;
+        height: 20rem;
+     } 
     &__details{
         display: flex;
         flex-direction: column;
